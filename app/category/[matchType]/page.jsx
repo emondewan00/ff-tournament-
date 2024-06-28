@@ -1,4 +1,4 @@
-import MatchCard from "@/components/matches/MatchCard";
+import MatchCard from "@/components/category/MatchCard";
 
 const MatchesPage = () => {
   return (

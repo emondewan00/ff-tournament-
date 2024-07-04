@@ -31,7 +31,7 @@ const AddMoney = () => {
         <p className="">{"->"} আপনি কত টাকা পাঠিয়েছেন নিচে সেটা লিখুন</p>
         <input
           type="text"
-          className="w-full p-2 mt-2 border rounded"
+          className="w-full p-2 mt-2 rounded bg-white/10"
           placeholder="কত টাকা পাঠিয়েছেন"
         />
       </div>
@@ -41,7 +41,7 @@ const AddMoney = () => {
         </p>
         <input
           type="text"
-          className="w-full p-2 mt-2 border rounded"
+          className="w-full p-2 mt-2 rounded bg-white/10"
           placeholder="আপনার বিকাশ,রকেট অথবা নগদের নাম্বার"
         />
       </div>

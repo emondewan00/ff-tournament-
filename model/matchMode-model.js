@@ -12,7 +12,6 @@ const matchModeSchema = new Schema({
   game: {
     type: "string",
     required: true,
-    index: true,
   },
   type: {
     type: "string",
@@ -31,7 +30,7 @@ const matchModeSchema = new Schema({
     default: 0,
   },
 });
-
+matchModeSchema.index({ game: "text" });
 const MatchMode = models.MatchMode || model("MatchMode", matchModeSchema);
 
 export default MatchMode;

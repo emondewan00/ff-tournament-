@@ -1,0 +1,60 @@
+[
+  {
+    "title": "CS (3 VS 3)",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "solo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no",
+      "defaultCoins": 1500
+    }
+  },
+  {
+    "title": "Solo Match",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "solo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no"
+    }
+  },
+  {
+    "title": "Duo Match",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "duo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no"
+    }
+  }
+]

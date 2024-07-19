@@ -2,31 +2,31 @@ import { Schema, model, models } from "mongoose";
 
 const matchModeSchema = new Schema({
   title: {
-    type: "string",
+    type: String,
     required: true,
   },
   image: {
-    type: "string",
+    type: String,
     required: true,
   },
   game: {
-    type: "string",
+    type: String,
     required: true,
   },
   type: {
-    type: "string",
+    type: String,
     required: true,
   },
   onGoings: {
-    type: "number",
+    type: Number,
     default: 0,
   },
   finishes: {
-    type: "number",
+    type: Number,
     default: 0,
   },
   totals: {
-    type: "number",
+    type: Number,
     default: 0,
   },
 });

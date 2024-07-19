@@ -1,0 +1,38 @@
+[
+  {
+    "title": "Classic Match",
+    "image": "https://placehold.co/50x50",
+    "game": "free fire",
+    "type": "classic",
+    "onGoings": 5,
+    "finishes": 10,
+    "totals": 15
+  },
+  {
+    "title": "Clash Squad",
+    "image": "https://placehold.co/50x50",
+    "game": "free fire",
+    "type": "clash-squad",
+    "onGoings": 5,
+    "finishes": 10,
+    "totals": 15
+  },
+  {
+    "title": "Classic Tournament",
+    "image": "https://placehold.co/50x50",
+    "game": "free fire",
+    "type": "classic",
+    "onGoings": 5,
+    "finishes": 18,
+    "totals": 23
+  },
+  {
+    "title": "CS Tournament",
+    "image": "https://placehold.co/50x50",
+    "game": "free fire",
+    "type": "clash-squad",
+    "onGoings": 5,
+    "finishes": 10,
+    "totals": 15
+  }
+]

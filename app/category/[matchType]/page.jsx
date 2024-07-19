@@ -4,7 +4,7 @@ const MatchesPage = () => {
   return (
     <>
       {/* match  cart  */}
-      <div className="pb-10">
+      <div className="pb-16">
         <MatchCard />
         <MatchCard />
         <MatchCard />

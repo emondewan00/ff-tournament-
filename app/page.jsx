@@ -1,6 +1,9 @@
 import MatchTypeCard from "@/components/home/MatchTypeCard";
+import connectMongo from "@/lib/connectDb";
 
-export default function Home() {
+export default async function Home() {
+  await connectMongo()
+  
   return (
     <>
       {/* hero section  */}
@@ -23,8 +26,6 @@ export default function Home() {
           <MatchTypeCard />
         </div>
       </div>
-     
-     
     </>
   );
 }

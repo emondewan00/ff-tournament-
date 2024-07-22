@@ -32,6 +32,11 @@ const matchSchema = new Schema({
   participants: [Schema.ObjectId],
   matchConfig: Schema.Types.Mixed,
   prizeDetails: Schema.Types.Mixed,
+  gameFor: {
+    type: Schema.ObjectId,
+    required: true,
+    index: true,
+  },
 });
 
 const Match = models.Match || model("Match", matchSchema);

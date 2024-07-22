@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.progress-bar {
+  width: var(--progress);
+  animation: progress-animation 3s linear 300ms;
+}
+
+@keyframes progress-animation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--progress);
+  }
+}

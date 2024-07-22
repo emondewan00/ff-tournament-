@@ -1,8 +1,18 @@
 import Link from "next/link";
 
 const MatchCard = ({ match }) => {
-  const { _id, title, version, schedule, prizeDetails, entryFee, map, type } =
-    match;
+  const {
+    _id,
+    title,
+    version,
+    schedule,
+    prizeDetails,
+    entryFee,
+    map,
+    type,
+    totalSlots,
+    participants,
+  } = match;
   const matchTitle =
     title +
     " | " +
@@ -10,8 +20,11 @@ const MatchCard = ({ match }) => {
     " | " +
     _id.toString().slice(18, 24)?.toUpperCase();
   const matchSchedule = new Date(schedule).toLocaleString();
+
+  const progress = (100 / totalSlots) * participants.length;
+
   return (
-    <div class="bg-white/5 rounded-lg p-4 mb-4 text-white relative">
+    <div class="bg-white/5 rounded-lg p-4 mb-4 text-white relative   match-card  ">
       <Link
         href={`/game/${_id}`}
         className="absolute top-0 left-0 w-full h-full"
@@ -52,6 +65,19 @@ const MatchCard = ({ match }) => {
           <p class="font-semibold">VERSION</p>
           <p className="capitalize">{version}</p>
         </div>
+      </div>
+      <div className="flex gap-x-4 my-2 items-center">
+        <div className="bg-white/10 h-2 w-full rounded">
+          <div
+            className="bg-gradient-to-l  from-red-500 w-full h-full rounded progress-bar"
+            style={{
+              "--progress": `${progress}%`,
+            }}
+          ></div>
+        </div>
+        <p className="text-white min-w-10">
+          {participants?.length}/{totalSlots}
+        </p>
       </div>
       <div class="flex justify-between">
         <button class="hover:scale-105 duration-300 delay-100 transition-all ease-linear bg-blue-600 text-white py-2 px-4 rounded shadow-md relative z-10">

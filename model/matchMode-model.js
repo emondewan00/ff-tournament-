@@ -29,6 +29,10 @@ const matchModeSchema = new Schema({
     type: Number,
     default: 0,
   },
+  cardOrder: {
+    type: Number,
+    required: true,
+  },
 });
 matchModeSchema.index({ game: "text" });
 const MatchMode = models.MatchMode || model("MatchMode", matchModeSchema);

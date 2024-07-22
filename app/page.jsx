@@ -1,10 +1,8 @@
 import MatchTypeCard from "@/components/home/MatchTypeCard";
-import connectMongo from "@/lib/connectDb";
 import { getMatchModesByGame } from "@/query/matchMode";
 
 export default async function Home() {
   const matchModes = await getMatchModesByGame("free fire");
-  console.log(new Date());
   return (
     <>
       {/* hero section  */}

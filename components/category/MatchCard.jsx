@@ -1,4 +1,5 @@
 import Link from "next/link";
+import JoinAndDetailsBTN from "./JoinAndDetailsBTN";
 
 const MatchCard = ({ match }) => {
   const {
@@ -75,18 +76,11 @@ const MatchCard = ({ match }) => {
             }}
           ></div>
         </div>
-        <p className="text-white min-w-10">
+        <p className="text-white min-w-10 bg-pink">
           {participants?.length}/{totalSlots}
         </p>
       </div>
-      <div class="flex justify-between">
-        <button class="hover:scale-105 duration-300 delay-100 transition-all ease-linear bg-blue-600 text-white py-2 px-4 rounded shadow-md relative z-10">
-          DETAILS
-        </button>
-        <button class="hover:scale-105 duration-300 delay-100 transition-all ease-linear bg-green-500 text-white py-2 px-4 rounded relative z-10">
-          JOIN NOW
-        </button>
-      </div>
+      <JoinAndDetailsBTN prizeDetails={prizeDetails} title={matchTitle} />
     </div>
   );
 };

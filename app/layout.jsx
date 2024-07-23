@@ -16,12 +16,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${roboto.className} bg-slate-900 text-white min-h-screen relative`}
+        className={`${roboto.className} bg-slate-900 text-white min-h-screen `}
       >
-        <div class="bg-slate-950 min-h-screen container pt-2">
+        <div class="bg-slate-950 min-h-screen container pt-2 relative">
           <Nav />
           {children}
           <Footer />
+          <div className="modal"></div>
         </div>
       </body>
     </html>

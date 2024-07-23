@@ -31,8 +31,8 @@ const TotalPrize = ({ onClose, prizeDetails, title }) => {
       onClick={onClose}
       className="bg-black/30 h-full w-full absolute top-0 left-0 z-[1000] flex justify-center items-center cursor-pointer"
     >
-      <div className="size-60 fixed bottom-12">
-        <div className="bg-yellow-400 text-white py-2 text-center">
+      <div className="w-60 fixed bottom-12 ">
+        <div className="bg-yellow-400 text-white py-2 text-center px-4 ">
           <h3 className="">Prize Pool</h3>
           <p className="text-sm capitalize truncate">{title}</p>
         </div>

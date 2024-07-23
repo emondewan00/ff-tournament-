@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { createPortal } from "react-dom";
 import TotalPrize from "./TotalPrize";
+import JoinForm from "./JoinForm";
 
 const JoinAndDetailsBTN = ({ prizeDetails, title }) => {
   const [joinPopUp, setJoinPopUp] = useState(false);
@@ -33,6 +34,11 @@ const JoinAndDetailsBTN = ({ prizeDetails, title }) => {
         >
           Join Now
         </button>
+        {joinPopUp &&
+          createPortal(
+            <JoinForm onClose={onCloseJoinPopUp} />,
+            document.querySelector(".modal")
+          )}
       </div>
     </>
   );

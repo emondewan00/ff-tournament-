@@ -2,6 +2,7 @@
 
 import connectMongo from "@/lib/connectDb";
 import Match from "@/model/match-model";
+import User from "@/model/user-model";
 
 export const getMatchesForCategoryId = async (id) => {
   await connectMongo();

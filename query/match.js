@@ -5,6 +5,18 @@ import Match from "@/model/match-model";
 
 export const getMatchesForCategoryId = async (id) => {
   await connectMongo();
-  const matches = await Match.find({gameFor:id}).lean();
+  const matches = await Match.find({ gameFor: id }).lean();
   return matches;
+};
+
+export const getMatchById = async (id) => {
+  await connectMongo();
+  const match = await Match.findById(id)
+    .populate({
+      path: "participants",
+      model: User,
+      select: ["name"],
+    })
+    .lean();
+  return match;
 };

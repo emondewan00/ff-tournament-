@@ -7,11 +7,36 @@
   animation: progress-animation 3s linear 300ms;
 }
 
+.match-card:hover {
+  animation: match-card-animation 4s linear 500ms infinite alternate;
+}
+
 @keyframes progress-animation {
   0% {
     width: 0;
   }
   100% {
     width: var(--progress);
+  }
+}
+
+@keyframes match-card-animation {
+  25% {
+    border-top-color: blue;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    border-right-color: blue;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  75% {
+    border-bottom-color: blue;
+    border-left-color: transparent;
+  }
+  100% {
+    border-left-color: blue;
   }
 }

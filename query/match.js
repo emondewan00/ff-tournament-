@@ -10,6 +10,12 @@ export const getMatchesForCategoryId = async (id) => {
   return matches;
 };
 
+export const getAllOngoingMatches = async () => {
+  await connectMongo();
+  const matches = await Match.find({ schedule: { $gte: new Date() } }).lean();
+  return matches;
+};
+
 export const getMatchById = async (id) => {
   await connectMongo();
   const match = await Match.findById(id)

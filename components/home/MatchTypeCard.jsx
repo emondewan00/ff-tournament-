@@ -1,10 +1,10 @@
 import Link from "next/link";
 
-const MatchTypeCard = ({ color, data }) => {
-  const { title, onGoings, image, _id, cardOrder } = data || {};
+const MatchTypeCard = ({ color, data, href }) => {
+  const { title, onGoings, image, cardOrder } = data || {};
   return (
     <Link
-      href={`/category/${_id}`}
+      href={href}
       style={{
         order: cardOrder,
       }}

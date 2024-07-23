@@ -12,7 +12,13 @@ export default async function Home() {
         <h2 class="text-xl font-semibold mb-2">FreeFire</h2>
         <div class="grid grid-cols-2 gap-4 ">
           {matchModes.map((matchMode) => {
-            return <MatchTypeCard key={matchMode._id} data={matchMode} />;
+            return (
+              <MatchTypeCard
+                key={matchMode._id}
+                data={matchMode}
+                href={`/matches/${matchMode._id}`}
+              />
+            );
           })}
         </div>
       </div>

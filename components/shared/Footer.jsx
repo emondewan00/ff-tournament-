@@ -7,10 +7,10 @@ const Footer = () => {
         <img src="https://placehold.co/24x24" alt="Shop" class="mb-1" />
         <span class="text-xs">Shop</span>
       </div>
-      <div class="flex flex-col items-center">
+      <Link href={"/on-going"} class="flex flex-col items-center">
         <img src="https://placehold.co/24x24" alt="OnGoing" class="mb-1" />
         <span class="text-xs">OnGoing</span>
-      </div>
+      </Link>
       <div class="flex flex-col items-center">
         <img src="https://placehold.co/24x24" alt="Play" class="mb-1" />
         <span class="text-xs">Play</span>

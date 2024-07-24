@@ -11,6 +11,10 @@ const participateSchema = new Schema({
     required: true,
     index: true,
   },
+  gameIdName: {
+    type: String,
+    required: true,
+  },
   totalKills: {
     type: Number,
   },

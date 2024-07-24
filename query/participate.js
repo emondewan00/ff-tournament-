@@ -15,3 +15,8 @@ export const getParticipantsForMatchId = async (id) => {
     .lean();
   return participants;
 };
+
+export const participateInAMatch = async (data) => {
+  await connectMongo();
+  const result = await Participate.create({});
+};

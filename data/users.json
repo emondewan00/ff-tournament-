@@ -1,0 +1,42 @@
+[
+  {
+    "_id": {
+      "$oid": "669b77e4ded993a1210a8a56"
+    },
+    "name": "Emon Hossain",
+    "email": "email@hossain.com",
+    "mobile": "01741235222",
+    "password": "123456",
+    "taka": 50
+  },
+  {
+    "_id": {
+      "$oid": "669b77e4ded993a1210a8a57"
+    },
+    "name": "Foysal Hossain",
+    "email": "foysal@hossain.com",
+    "mobile": "01741235222",
+    "password": "123456",
+    "taka": 50
+  },
+  {
+    "_id": {
+      "$oid": "669b77e4ded993a1210a8a58"
+    },
+    "name": "Tussar Hossain",
+    "email": "tussar@hossain.com",
+    "mobile": "01741235222",
+    "password": "123456",
+    "taka": 50
+  },
+  {
+    "_id": {
+      "$oid": "669b77e4ded993a1210a8a59"
+    },
+    "name": "Sabbir Hossain",
+    "email": "sabbir@hossain.com",
+    "mobile": "01741235222",
+    "password": "123456",
+    "taka": 50
+  }
+]

@@ -27,12 +27,15 @@ const TotalPrize = ({ onClose, prizeDetails, title }) => {
   }
 
   return (
-    <div
-      onClick={onClose}
-      className="bg-black/30 h-full w-full absolute top-0 left-0 z-[1000] flex justify-center items-center cursor-pointer"
-    >
-      <div className="w-60 fixed bottom-12 ">
-        <div className="bg-yellow-400 text-white py-2 text-center px-4 ">
+    <div className="bg-black/30 h-full w-full absolute top-0 left-0 z-[1000] flex justify-center items-center ">
+      <div className=" fixed bottom-12 ">
+        <div
+          onClick={onClose}
+          className="size-8 rounded-full text-xl font-bold text-gray-600 bg-white flex items-center justify-center mx-auto mb-4 hover:bg-blue-500 hover:text-white hover:scale-110 transition-all duration-150 delay-100 ease-linear cursor-pointer"
+        >
+          x
+        </div>
+        <div className="bg-yellow-400 text-white py-2 text-center px-4 w-60">
           <h3 className="">Prize Pool</h3>
           <p className="text-sm capitalize truncate">{title}</p>
         </div>

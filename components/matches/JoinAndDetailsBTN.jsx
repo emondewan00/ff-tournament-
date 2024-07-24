@@ -11,10 +11,10 @@ const JoinAndDetailsBTN = ({ prizeDetails, title }) => {
   const onCloseJoinPopUp = () => setJoinPopUp(false);
   return (
     <>
-      <div class="flex justify-between">
+      <div className="flex justify-between">
         <button
           onClick={() => setTotalPrize(true)}
-          class="bg-indigo-600 text-white py-2 px-4 rounded shadow-md relative z-50 hover:scale-105 delay-200 duration-300 transition-all ease-linear hover:bg-indigo-600/80 "
+          className="bg-indigo-600 text-white py-2 px-4 rounded shadow-md relative z-50 hover:scale-105 delay-200 duration-300 transition-all ease-linear hover:bg-indigo-600/80 "
         >
           Total Prize
         </button>
@@ -30,7 +30,7 @@ const JoinAndDetailsBTN = ({ prizeDetails, title }) => {
 
         <button
           onClick={() => setJoinPopUp(!joinPopUp)}
-          class="bg-green-500 text-white py-2 px-4 rounded relative z-50 hover:scale-105 delay-200 duration-300 transition-all ease-linear hover:bg-green-500/80"
+          className="bg-green-500 text-white py-2 px-4 rounded relative z-50 hover:scale-105 delay-200 duration-300 transition-all ease-linear hover:bg-green-500/80"
         >
           Join Now
         </button>

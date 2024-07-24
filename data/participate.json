@@ -1,0 +1,398 @@
+[
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a56"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c71"
+    },
+    "totalKills": 10,
+    "position": 1,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a57"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c71"
+    },
+    "totalKills": 1,
+    "position": 2,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a58"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c71"
+    },
+    "totalKills": 3,
+    "position": 3,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a59"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c71"
+    },
+    "totalKills": 1,
+    "position": 4,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a56"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c72"
+    },
+    "totalKills": 2,
+    "position": 1,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a57"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c72"
+    },
+    "totalKills": 2,
+    "position": 2,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a58"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c72"
+    },
+    "totalKills": 2,
+    "position": 3,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a59"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c72"
+    },
+    "totalKills": 2,
+    "position": 4,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a56"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c73"
+    },
+    "totalKills": 2,
+    "position": 1,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a57"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c73"
+    },
+    "totalKills": 2,
+    "position": 2,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a58"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c73"
+    },
+    "totalKills": 2,
+    "position": 3,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a59"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c73"
+    },
+    "totalKills": 2,
+    "position": 4,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a56"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c74"
+    },
+    "totalKills": 2,
+    "position": 1,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a57"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c74"
+    },
+    "totalKills": 2,
+    "position": 2,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a58"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c74"
+    },
+    "totalKills": 2,
+    "position": 3,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a59"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c74"
+    },
+    "totalKills": 2,
+    "position": 4,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a56"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c75"
+    },
+    "totalKills": 2,
+    "position": 1,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a57"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c75"
+    },
+    "totalKills": 2,
+    "position": 2,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a58"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c75"
+    },
+    "totalKills": 2,
+    "position": 3,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a59"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c75"
+    },
+    "totalKills": 2,
+    "position": 4,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a56"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c76"
+    },
+    "totalKills": 2,
+    "position": 1,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a57"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c76"
+    },
+    "totalKills": 2,
+    "position": 2,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a58"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c76"
+    },
+    "totalKills": 2,
+    "position": 3,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a59"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c76"
+    },
+    "totalKills": 2,
+    "position": 4,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a56"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c77"
+    },
+    "totalKills": 2,
+    "position": 1,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a57"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c77"
+    },
+    "totalKills": 2,
+    "position": 2,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a58"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c77"
+    },
+    "totalKills": 2,
+    "position": 3,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a59"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c77"
+    },
+    "totalKills": 2,
+    "position": 4,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a56"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c78"
+    },
+    "totalKills": 2,
+    "position": 1,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a57"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c78"
+    },
+    "totalKills": 2,
+    "position": 2,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a58"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c78"
+    },
+    "totalKills": 2,
+    "position": 3,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a59"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c78"
+    },
+    "totalKills": 2,
+    "position": 4,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a56"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c79"
+    },
+    "totalKills": 2,
+    "position": 1,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a57"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c79"
+    },
+    "totalKills": 2,
+    "position": 2,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a58"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c79"
+    },
+    "totalKills": 2,
+    "position": 3,
+    "status": "published"
+  },
+  {
+    "userId": {
+      "$oid": "669b77e4ded993a1210a8a59"
+    },
+    "matchId": {
+      "$oid": "669d349fc754c653b9981c79"
+    },
+    "totalKills": 2,
+    "position": 4,
+    "status": "published"
+  }
+]

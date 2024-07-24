@@ -4,7 +4,7 @@ import StatisticsRow from "@/components/statistics/StatisticsRow";
 const Statistics = () => {
   return (
     <div>
-      <table class="w-full text-left border-collapse">
+      <table className="w-full text-left border-collapse">
         <StatisticsHead />
         <tbody>
           <StatisticsRow />

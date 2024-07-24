@@ -18,7 +18,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${roboto.className} bg-slate-900 text-white min-h-screen `}
       >
-        <div class="bg-slate-950 min-h-screen container pt-2 relative">
+        <div className="bg-slate-950 min-h-screen container pt-2 relative">
           <Nav />
           {children}
           <Footer />

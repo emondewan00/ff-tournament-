@@ -25,45 +25,45 @@ const MatchCard = ({ match }) => {
   const progress = (100 / totalSlots) * participants.length;
 
   return (
-    <div class="bg-white/5 rounded-lg p-4 mb-4 text-white relative   match-card border-transparent border-2">
+    <div className="bg-white/5 rounded-lg p-4 mb-4 text-white relative   match-card border-transparent border-2">
       <Link
         href={`/match/${_id}`}
         className="absolute top-0 left-0 w-full h-full"
       ></Link>
-      <div class="flex items-center mb-2">
+      <div className="flex items-center mb-2">
         <img
           src="https://placehold.co/50x50"
           alt="match image"
-          class="w-12 h-12 rounded-full mr-2"
+          className="w-12 h-12 rounded-full mr-2"
         />
         <div>
-          <h2 class="text-lg font-semibold capitalize">{matchTitle}</h2>
-          <p class="text-sm text-red-500">Time: {matchSchedule}</p>
+          <h2 className="text-lg font-semibold capitalize">{matchTitle}</h2>
+          <p className="text-sm text-red-500">Time: {matchSchedule}</p>
         </div>
       </div>
-      <div class="grid grid-cols-3 gap-2 text-sm mb-2">
+      <div className="grid grid-cols-3 gap-2 text-sm mb-2">
         <div>
-          <p class="font-semibold">TOTAL PRIZE</p>
+          <p className="font-semibold">TOTAL PRIZE</p>
           <p>৳{prizeDetails?.totalPrize}</p>
         </div>
         <div>
-          <p class="font-semibold">PER KILL</p>
+          <p className="font-semibold">PER KILL</p>
           <p>৳{prizeDetails?.perKill}</p>
         </div>
         <div>
-          <p class="font-semibold">ENTRY FEE</p>
+          <p className="font-semibold">ENTRY FEE</p>
           <p>৳{entryFee}</p>
         </div>
         <div>
-          <p class="font-semibold">MAP</p>
+          <p className="font-semibold">MAP</p>
           <p className="capitalize">{map}</p>
         </div>
         <div>
-          <p class="font-semibold">TYPE</p>
+          <p className="font-semibold">TYPE</p>
           <p className="capitalize">{type}</p>
         </div>
         <div>
-          <p class="font-semibold">VERSION</p>
+          <p className="font-semibold">VERSION</p>
           <p className="capitalize">{version}</p>
         </div>
       </div>

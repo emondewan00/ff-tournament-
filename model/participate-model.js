@@ -17,6 +17,10 @@ const participateSchema = new Schema({
   position: {
     type: Number,
   },
+  status: {
+    type: String,
+    enum: ["pending", "published"],
+  },
 });
 
 const Participate =

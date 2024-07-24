@@ -10,13 +10,18 @@ const JoinForm = ({ onClose }) => {
           x
         </div>
 
-        <form action="" className="space-y-4 w-60 p-4 bg-white">
+        <form action="" className="space-y-4 w-60 p-4 bg-white rounded">
           {/* <label htmlFor="userName">User Name</label> */}
           <h1>User info </h1>
           <input
             type="text"
             placeholder="Enter your user name"
-            className="p-2 bg-slate-100 border border-blue-500  focus:outline focus:outline-blue-500 "
+            className="p-2 bg-slate-100 border border-blue-500  focus:outline focus:outline-blue-500 w-full"
+          />
+          <input
+            type="submit"
+            value="Join"
+            className="w-full bg-blue-600 py-2 rounded text-white cursor-pointer hover:bg-blue-700 duration-100 delay-75 transition-all ease-linear "
           />
         </form>
       </div>

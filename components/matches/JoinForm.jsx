@@ -1,4 +1,7 @@
 "use client";
+
+import { joinInMatch } from "@/actions/joinInMatch";
+
 const JoinForm = ({ onClose }) => {
   return (
     <div className="bg-black/30 h-full w-full absolute top-0 left-0 z-[1000] flex justify-center items-center  ">
@@ -10,11 +13,15 @@ const JoinForm = ({ onClose }) => {
           x
         </div>
 
-        <form action="" className="space-y-4 w-60 p-4 bg-white rounded">
+        <form
+          action={joinInMatch}
+          className="space-y-4 w-60 p-4 bg-white rounded"
+        >
           {/* <label htmlFor="userName">User Name</label> */}
           <h1>User info </h1>
           <input
             type="text"
+            name="gameIdName"
             placeholder="Enter your user name"
             className="p-2 bg-slate-100 border border-blue-500  focus:outline focus:outline-blue-500 w-full"
           />

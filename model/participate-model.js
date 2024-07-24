@@ -24,6 +24,7 @@ const participateSchema = new Schema({
   status: {
     type: String,
     enum: ["pending", "published"],
+    default: "pending",
   },
 });
 

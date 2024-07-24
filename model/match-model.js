@@ -37,6 +37,10 @@ const matchSchema = new Schema({
     required: true,
     index: true,
   },
+  totalSlots: {
+    type: Number,
+    required: true,
+  },
 });
 
 const Match = models.Match || model("Match", matchSchema);

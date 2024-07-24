@@ -1,5 +1,4 @@
 "use server";
-import mongoose from "mongoose";
 import connectMongo from "@/lib/connectDb";
 import Participate from "@/model/participate-model";
 import User from "@/model/user-model";
@@ -18,25 +17,40 @@ export const getParticipantsForMatchId = async (id) => {
 };
 
 export const participateInAMatch = async (data) => {
-  const session = await mongoose.startSession();
-  session.startTransaction();
   try {
     await connectMongo();
-    const result = await Participate.create(data);
+    // get match by matchId
     const updatedMatch = await Match.findById(data.matchId);
+    
+    // create new participant instance
+    const newParticipant = new Participate(data);
 
-    updatedMatch.participants.push(result._id);
-    await updatedMatch.save({ session });
+    // if slots are not available then return
+    if (updatedMatch.totalSlots <= updatedMatch.participants.length) {
+      return {
+        message: "Matched participants already fulfilled",
+        status: "failed",
+      };
+    }
 
+    // get user for update taka
     const updatedUser = await User.findById(data.userId);
 
-    if (updatedUser.taka < updatedMatch.taka) {
-      await session.abortTransaction();
-      session.endSession();
+    // if user have not enough taka then return
+    if (updatedUser.taka < updatedMatch.entryFee) {
       return { message: "Couldn't have enough money", status: "error" };
     }
+
+    // save new participants
+    await newParticipant.save();
+
+    // update participants array with new participants in match
+    updatedMatch.participants.push(newParticipant._id);
+    await updatedMatch.save();
+
+    // update user taka after subtraction of entry fee
     updatedUser.taka = updatedUser.taka - updatedMatch.entryFee;
-    await updatedUser.save({ session });
+    await updatedUser.save();
 
     return { message: "Participate successfully", status: "success" };
   } catch (error) {

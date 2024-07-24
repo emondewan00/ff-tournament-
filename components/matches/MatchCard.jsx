@@ -80,7 +80,12 @@ const MatchCard = ({ match }) => {
           {participants?.length}/{totalSlots}
         </p>
       </div>
-      <JoinAndDetailsBTN prizeDetails={prizeDetails} title={matchTitle} />
+      <JoinAndDetailsBTN
+        prizeDetails={prizeDetails}
+        isClosed={totalSlots === participants?.length}
+        isJoined={participants.includes(participants)}
+        title={matchTitle}
+      />
     </div>
   );
 };

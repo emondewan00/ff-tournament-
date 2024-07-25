@@ -1,3 +1,4 @@
+import JoinBTN from "@/components/match/JoinBTN";
 import { getMatchById } from "@/query/match";
 
 const MatchDetailsPage = async ({ params: { id } }) => {
@@ -34,9 +35,9 @@ const MatchDetailsPage = async ({ params: { id } }) => {
   }
 
   return (
-    <div className=" mx-auto  text-white  rounded-lg">
+    <div className=" mx-auto  text-white  rounded-lg pb-24">
       <img
-        src="https://placehold.co/600x200"
+        src="https://placehold.co/400x200"
         alt="Game Banner"
         className="w-full rounded-lg mb-4"
       />
@@ -81,9 +82,10 @@ const MatchDetailsPage = async ({ params: { id } }) => {
       <ul className="list-disc list-inside mb-4 capitalize">
         {contents.map((content) => content)}
       </ul>
-      <button className="w-full bg-zinc-800 text-white py-2 rounded-md font-bold">
-        JOIN NOW
-      </button>
+      <JoinBTN
+        isClosed={totalSlots === participants?.length}
+        isJoined={participants.includes(participants)}
+      />
     </div>
   );
 };

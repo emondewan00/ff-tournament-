@@ -9,10 +9,12 @@ module.exports = {
     extend: {
       container: {
         center: true,
-        padding: "1rem",
         screens: {
           sm: "480px",
         },
+      },
+      backgroundImage: {
+        "custom-img": "url('/images/free-fire-1.jpg')",
       },
     },
   },

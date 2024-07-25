@@ -25,7 +25,7 @@ const MatchCard = ({ match }) => {
   const progress = (100 / totalSlots) * participants.length;
 
   return (
-    <div className="bg-white/5 rounded-lg p-4 mb-4 text-white relative   match-card border-transparent border-2">
+    <div className="bg-white/10 rounded-lg p-4 mb-4 text-white relative match-card border-transparent border-2 backdrop-blur-md">
       <Link
         href={`/match/${_id}`}
         className="absolute top-0 left-0 w-full h-full"

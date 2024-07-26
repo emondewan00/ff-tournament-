@@ -1,12 +1,15 @@
 const Profile = () => {
   return (
     <div className="max-w-md mx-auto pb-32">
-      <div className="max-w-md mx-auto bg-white/5 p-6 rounded-lg shadow-md text-white">
-        <div className="mb-6">
+      <div className="max-w-md mx-auto text-white">
+        <div className="mb-6 p-4 bg-white/10 backdrop-blur-sm">
           <h2 className="text-lg font-semibold mb-2">Edit Profile</h2>
           <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
-              <label className="block text-sm font-medium mb-1" for="first-name">
+              <label
+                className="block text-sm font-medium mb-1"
+                for="first-name"
+              >
                 First Name
               </label>
               <input
@@ -65,10 +68,13 @@ const Profile = () => {
             Save
           </button>
         </div>
-        <div>
+        <div className="p-4 bg-white/10 backdrop-blur-sm">
           <h2 className="text-lg font-semibold mb-2">Change Password</h2>
           <div className="mb-4 relative">
-            <label className="block text-sm font-medium mb-1" for="old-password">
+            <label
+              className="block text-sm font-medium mb-1"
+              for="old-password"
+            >
               Old Password
             </label>
             <input
@@ -85,7 +91,10 @@ const Profile = () => {
             </button>
           </div>
           <div className="mb-4 relative">
-            <label className="block text-sm font-medium mb-1" for="new-password">
+            <label
+              className="block text-sm font-medium mb-1"
+              for="new-password"
+            >
               New Password
             </label>
             <input

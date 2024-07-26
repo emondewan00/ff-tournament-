@@ -38,7 +38,9 @@ const MatchCard = ({ match }) => {
         />
         <div>
           <h2 className="text-lg font-semibold capitalize">{matchTitle}</h2>
-          <p className="text-sm text-red-500">Time: {matchSchedule}</p>
+          <p className="text-sm ">
+            Time: <span className="text-green-500">{matchSchedule}</span>
+          </p>
         </div>
       </div>
       <div className="grid grid-cols-3 gap-2 text-sm mb-2">

@@ -17,7 +17,7 @@ const JoinBTN = ({ isClosed, isJoined }) => {
     <>
       <button
         onClick={onClickJoin}
-        className="w-full bg-zinc-800 text-white py-2 rounded-md font-bold"
+        className="w-full bg-green-500 text-white py-2 rounded-md font-bold"
       >
         {isClosed ? "Closed" : isJoined ? "Joined" : "Join Now"}
       </button>

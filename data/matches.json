@@ -1,5 +1,51 @@
 [
   {
+    "title": "CS (1 VS 1)",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "solo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no",
+      "defaultCoins": 1500
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4707"
+    }
+  },
+  {
+    "title": "CS (2 VS 2)",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "solo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no",
+      "defaultCoins": 1500
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4707"
+    }
+  },
+  {
     "title": "CS (3 VS 3)",
     "prizeDetails": {
       "totalPrize": 300,
@@ -17,6 +63,124 @@
     "matchConfig": {
       "characterSkill": "no",
       "defaultCoins": 1500
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4707"
+    }
+  },
+  {
+    "title": "CS (4 VS 4)",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "solo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no",
+      "defaultCoins": 1500
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4707"
+    }
+  },
+  {
+    "title": "CS (1 VS 1)",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "solo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no",
+      "defaultCoins": 1500
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4709"
+    }
+  },
+  {
+    "title": "CS (2 VS 2)",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "solo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no",
+      "defaultCoins": 1500
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4709"
+    }
+  },
+  {
+    "title": "CS (3 VS 3)",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "solo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no",
+      "defaultCoins": 1500
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4709"
+    }
+  },
+  {
+    "title": "CS (4 VS 4)",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "solo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no",
+      "defaultCoins": 1500
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4709"
     }
   },
   {
@@ -36,6 +200,9 @@
     "participants": [],
     "matchConfig": {
       "characterSkill": "no"
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4706"
     }
   },
   {
@@ -55,6 +222,141 @@
     "participants": [],
     "matchConfig": {
       "characterSkill": "no"
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4706"
+    }
+  },
+  {
+    "title": "Solo Match",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "solo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no"
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4706"
+    }
+  },
+  {
+    "title": "Duo Match",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "duo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no"
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4706"
+    }
+  },
+  {
+    "title": "Solo Match",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "solo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no"
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4708"
+    }
+  },
+  {
+    "title": "Duo Match",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "duo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no"
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4708"
+    }
+  },
+  {
+    "title": "Solo Match",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "solo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no"
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4708"
+    }
+  },
+  {
+    "title": "Duo Match",
+    "prizeDetails": {
+      "totalPrize": 300,
+      "winner": 90,
+      "2": 70,
+      "3": 60,
+      "perKill": 5
+    },
+    "entryFee": 10,
+    "map": "bermuda",
+    "type": "duo",
+    "version": "android",
+    "schedule": "2024-07-19T18:15:59.433Z",
+    "participants": [],
+    "matchConfig": {
+      "characterSkill": "no"
+    },
+    "gameFor": {
+      "$oid": "66a38263e4dcdb915dda4708"
     }
   }
 ]

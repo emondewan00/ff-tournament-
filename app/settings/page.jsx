@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const SettingsPage = () => {
   return (
     <div className="bg-white/10 backdrop-blur-sm p-4">
@@ -24,8 +26,21 @@ const SettingsPage = () => {
         </div>
       </div>
 
-      <h1 className="text-2xl font-bold">Settings</h1>
+      <h1 className="text-2xl font-bold mt-2">Settings</h1>
       <p>Your settings will be displayed here.</p>
+      <ul className="list-inside list-disc mt-2">
+        <li>
+          <Link href={"/settings/profile"}>My Profile</Link>
+        </li>
+        <li>
+          <Link href={"/wallet"}>My Wallet</Link>
+        </li>
+        <li>
+          <Link href={"/statistics"}>My Statistics</Link>
+        </li>
+        <li>Share</li>
+        <li>Logout</li>
+      </ul>
     </div>
   );
 };

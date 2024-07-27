@@ -15,9 +15,9 @@ const Footer = () => {
         <img src="https://placehold.co/24x24" alt="Result" className="mb-1" />
         <span className="text-xs">Result</span>
       </div>
-      <Link href={"/settings/profile"} className="flex flex-col items-center">
+      <Link href={"/settings"} className="flex flex-col items-center">
         <img src="https://placehold.co/24x24" alt="Me" className="mb-1" />
-        <span className="text-xs">Me</span>
+        <span className="text-xs">Settings</span>
       </Link>
     </div>
   );

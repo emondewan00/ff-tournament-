@@ -3,7 +3,7 @@
     "title": "CS (1 VS 1)",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -20,13 +20,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4707"
-    }
+    },
+    "totalSlots": 2
   },
   {
     "title": "CS (2 VS 2)",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -43,13 +44,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4707"
-    }
+    },
+    "totalSlots": 4
   },
   {
     "title": "CS (3 VS 3)",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -66,13 +68,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4707"
-    }
+    },
+    "totalSlots": 6
   },
   {
     "title": "CS (4 VS 4)",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -89,13 +92,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4707"
-    }
+    },
+    "totalSlots": 8
   },
   {
     "title": "CS (1 VS 1)",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -112,13 +116,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4709"
-    }
+    },
+    "totalSlots": 2
   },
   {
     "title": "CS (2 VS 2)",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -135,13 +140,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4709"
-    }
+    },
+    "totalSlots": 4
   },
   {
     "title": "CS (3 VS 3)",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -158,13 +164,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4709"
-    }
+    },
+    "totalSlots": 6
   },
   {
     "title": "CS (4 VS 4)",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -181,13 +188,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4709"
-    }
+    },
+    "totalSlots": 8
   },
   {
     "title": "Solo Match",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -203,13 +211,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4706"
-    }
+    },
+    "totalSlots": 48
   },
   {
     "title": "Duo Match",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -225,13 +234,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4706"
-    }
+    },
+    "totalSlots": 48
   },
   {
     "title": "Solo Match",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -247,13 +257,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4706"
-    }
+    },
+    "totalSlots": 48
   },
   {
     "title": "Duo Match",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -269,13 +280,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4706"
-    }
+    },
+    "totalSlots": 48
   },
   {
     "title": "Solo Match",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -291,13 +303,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4708"
-    }
+    },
+    "totalSlots": 48
   },
   {
     "title": "Duo Match",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -313,13 +326,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4708"
-    }
+    },
+    "totalSlots": 48
   },
   {
     "title": "Solo Match",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -335,13 +349,14 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4708"
-    }
+    },
+    "totalSlots": 48
   },
   {
     "title": "Duo Match",
     "prizeDetails": {
       "totalPrize": 300,
-      "winner": 90,
+      "1": 90,
       "2": 70,
       "3": 60,
       "perKill": 5
@@ -357,6 +372,7 @@
     },
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4708"
-    }
+    },
+    "totalSlots": 48
   }
 ]

@@ -22,7 +22,7 @@ export default function RootLayout({ children }) {
         <div className=" container w-full bg-custom-img bg-cover bg-no-repeat ">
           <div className="bg-black/50 min-h-screen relative">
             <Nav />
-            <div className="pt-4 px-6">
+            <div className="pt-4 px-4">
               {children}
               <Footer />
             </div>

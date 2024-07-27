@@ -1,6 +1,6 @@
 const StatisticsHead = () => {
   return (
-    <thead className="bg-gray-200 text-black">
+    <thead >
       <tr>
         <th className="p-2 border-b border-border">#</th>
         <th className="p-2 border-b border-border">Match Info</th>

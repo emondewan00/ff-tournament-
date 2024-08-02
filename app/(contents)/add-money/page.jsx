@@ -1,6 +1,6 @@
 const AddMoney = () => {
   return (
-    <div className="bg-white/5  p-4">
+    <div className="bg-white/10 p-4 backdrop-blur-sm">
       <div className="space-y-4">
         <div className="flex items-center">
           <img

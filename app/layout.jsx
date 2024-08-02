@@ -19,16 +19,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${roboto.className} bg-slate-900 text-white min-h-screen`}
       >
-        <div className=" container w-full bg-custom-img bg-cover bg-no-repeat ">
-          <div className="bg-black/50 min-h-screen relative">
-            <Nav />
-            <div className="pt-4 px-4">
-              {children}
-              <Footer />
-            </div>
-            <div className="modal"></div>
-          </div>
-        </div>
+        {children}
       </body>
     </html>
   );

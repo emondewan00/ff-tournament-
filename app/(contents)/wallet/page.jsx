@@ -1,6 +1,6 @@
 const WalletPage = () => {
   return (
-    <div className="bg-white/5 text-white p-4 rounded-lg max-w-md mx-auto">
+    <div className="bg-white/10 text-white p-4 max-w-md mx-auto backdrop-blur-sm">
       <div className="flex justify-between items-center mb-4">
         <h1 className="text-lg font-bold">AVAILABLE BALANCE :</h1>
         <a href="#" className="">

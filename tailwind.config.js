@@ -15,6 +15,7 @@ module.exports = {
       },
       backgroundImage: {
         "custom-img": "url('/images/free-fire-1.jpg')",
+        "auth-img": "url('/images/login.jpg')",
       },
     },
   },

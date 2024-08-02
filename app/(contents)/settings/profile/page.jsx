@@ -4,7 +4,7 @@ const Profile = () => {
       <div className="max-w-md mx-auto text-white">
         <div className="mb-6 p-4 bg-white/10 backdrop-blur-sm">
           <h2 className="text-lg font-semibold mb-2">Edit Profile</h2>
-          <div className="grid grid-cols-2 gap-4 mb-4">
+          {/* <div className="grid grid-cols-2 gap-4 mb-4">
             <div>
               <label
                 className="block text-sm font-medium mb-1"
@@ -30,7 +30,7 @@ const Profile = () => {
                 className="w-full p-2 outline-none focus:outline-blue-500 rounded bg-white/10 "
               />
             </div>
-          </div>
+          </div> */}
           <div className="mb-4">
             <label className="block text-sm font-medium mb-1" for="username">
               Username

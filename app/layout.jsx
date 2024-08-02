@@ -1,7 +1,7 @@
 import { Roboto } from "next/font/google";
 import "./globals.css";
-import Nav from "@/components/shared/Nav";
-import Footer from "@/components/shared/Footer";
+import "react-toastify/dist/ReactToastify.css";
+import { ToastContainer } from "react-toastify";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -20,6 +20,7 @@ export default function RootLayout({ children }) {
         className={`${roboto.className} bg-slate-900 text-white min-h-screen`}
       >
         {children}
+        <ToastContainer />
       </body>
     </html>
   );

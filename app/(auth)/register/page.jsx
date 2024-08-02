@@ -1,12 +1,28 @@
+"use client";
 import Link from "next/link";
-
+import { useForm } from "react-hook-form";
+import signUp from "@/actions/register";
+import { toast } from "react-toastify";
 const RegisterPage = () => {
+  const { handleSubmit, register } = useForm();
+
+  const onSubmit = async (data) => {
+    const result = await signUp(data);
+    if (result.success) {
+      toast.success(result.message);
+    } else {
+      toast.error(result.message);
+    }
+  };
   return (
     <div className="flex h-[88vh] w-full justify-center items-center">
       <div className="bg-white/5 p-4 w-4/5 backdrop-blur-md shadow-md">
         <h1 className="text-2xl text-center">Register</h1>
 
-        <form action="" className="flex flex-col gap-y-2 mt-2">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col gap-y-2 mt-2"
+        >
           <div className="grid grid-cols-2 gap-4 mb-2">
             <div>
               <label
@@ -18,7 +34,8 @@ const RegisterPage = () => {
               <input
                 id="first-name"
                 type="text"
-                value="Foysal"
+                placeholder="First Name"
+                {...register("firstName", { required: true })}
                 className="w-full p-2 outline-none focus:outline-blue-500 rounded bg-white/10 "
               />
             </div>
@@ -28,8 +45,9 @@ const RegisterPage = () => {
               </label>
               <input
                 id="last-name"
+                placeholder="Last Name"
+                {...register("lastName", { required: true })}
                 type="text"
-                value="Vai"
                 className="w-full p-2 outline-none focus:outline-blue-500 rounded bg-white/10 "
               />
             </div>
@@ -42,18 +60,8 @@ const RegisterPage = () => {
             <input
               id="email"
               type="email"
-              value="vaifoysal6@gmail.com"
-              className="w-full p-2 outline-none focus:outline-blue-500 rounded bg-white/10 "
-            />
-          </div>
-          <div className="mb-2">
-            <label className="block text-sm font-medium mb-1" for="phone">
-              Mobile Number
-            </label>
-            <input
-              id="phone"
-              type="tel"
-              value="01608003586"
+              {...register("email", { required: true })}
+              placeholder="Type your email address"
               className="w-full p-2 outline-none focus:outline-blue-500 rounded bg-white/10 "
             />
           </div>
@@ -64,7 +72,8 @@ const RegisterPage = () => {
             <input
               id="password"
               type="password"
-              placeholder="Enter your password"
+              {...register("password", { required: true, minLength: 6 })}
+              placeholder="Type your password"
               className="w-full p-2 outline-none focus:outline-blue-500 rounded bg-white/10"
             />
           </div>

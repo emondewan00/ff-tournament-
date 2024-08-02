@@ -1,4 +1,4 @@
-import mongoose, { Schema, model, models, mongo } from "mongoose";
+import { Schema, model, models } from "mongoose";
 
 const userSchema = new Schema({
   firstName: {
@@ -12,7 +12,7 @@ const userSchema = new Schema({
   email: {
     type: String,
     required: [true, "Email is required"],
-    unique: true,
+    unique: [true, "Email is already used"],
   },
   mobile: {
     type: String,
@@ -26,10 +26,6 @@ const userSchema = new Schema({
     default: 0,
   },
 });
-
-userSchema.index({ email: 1 }, { unique: true });
-
-mongoose.set("autoIndex", true);
 
 const User = models.User || model("User", userSchema);
 

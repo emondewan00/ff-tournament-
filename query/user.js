@@ -12,9 +12,13 @@ export const registerUser = async (user) => {
       message: "User registered successfully",
     };
   } catch (error) {
+    let message = error.message || "User registration failed";
+    if (error.code === 11000) {
+      message = "Email already exists";
+    }
     return {
       success: false,
-      message: error.message || "Registration failed",
+      message,
     };
   }
 };

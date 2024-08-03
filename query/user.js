@@ -2,11 +2,14 @@
 
 import connectMongo from "@/lib/connectDb";
 import User from "@/model/user-model";
+import bcrypt from "bcrypt";
 
 export const registerUser = async (user) => {
   try {
     await connectMongo();
-    const newUser = await User.create(user);
+    const password = await bcrypt.hash(user.password, 10);
+
+    await User.create({ ...user, password });
     return {
       success: true,
       message: "User registered successfully",

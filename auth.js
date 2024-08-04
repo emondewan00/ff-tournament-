@@ -12,7 +12,7 @@ export const {
     Credentials({
       name: "Credentials",
       async authorize(credentials, req) {
-        console.log(credentials);
+        console.log(credentials, "authorization");
         return credentials;
       },
     }),
@@ -20,11 +20,13 @@ export const {
   callbacks: {
     async jwt({ token, user }) {
       if (user) {
+        console.log(token, user, "jwt");
         token.email = user.email;
       }
       return token;
     },
     async session({ session, token }) {
+      console.log(session, token, "session");
       if (token) {
         session.user.email = token.email;
       }

@@ -49,7 +49,18 @@ export const loginUser = async (user) => {
     if (!isPasswordValid) {
       return { success: false, message: "Invalid email or password" };
     }
-    return { success: true, message: existingUser };
+    const { _id, email, firstName, lastName } = existingUser;
+
+    return {
+      success: true,
+      message: "Login success",
+      user: {
+       
+        email,
+        firstName,
+        lastName,
+      },
+    };
   } catch (error) {
     return { success: false, message: "Failed to login" };
   }

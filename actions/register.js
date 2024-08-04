@@ -6,7 +6,7 @@ import { redirect } from "next/navigation";
 
 const signUp = async (data) => {
   const result = await registerUser(data);
-  if (result.success) {
+  if (result?.success) {
     signIn("credentials", { ...result });
     redirect("/");
   }

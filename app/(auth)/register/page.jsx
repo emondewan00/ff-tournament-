@@ -8,7 +8,7 @@ const RegisterPage = () => {
 
   const onSubmit = async (data) => {
     const result = await signUp(data);
-    if (result.success) {
+    if (result?.success) {
       toast.success(result.message);
     } else {
       toast.error(result.message);

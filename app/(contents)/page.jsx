@@ -1,9 +1,12 @@
+import { auth } from "@/auth";
 import MatchTypeCard from "@/components/home/MatchTypeCard";
 import Slider from "@/components/home/Slider";
 import { getMatchModesByGame } from "@/query/matchMode";
 
 export default async function Home() {
   const matchModes = await getMatchModesByGame("free fire");
+  const session = await auth();
+  console.log(session);
   return (
     <div className="pb-24">
       {/* hero section  */}

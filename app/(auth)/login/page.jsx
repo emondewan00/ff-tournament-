@@ -1,13 +1,24 @@
+"use client";
+import login from "@/actions/login";
 import Link from "next/link";
+import { useForm } from "react-hook-form";
 
 const LoginPage = () => {
+  const { register, handleSubmit } = useForm();
+  const onSubmit = async (data) => {
+    await login(data);
+    // TODO: Implement login logic
+  };
   return (
     <div className="flex h-[88vh] w-full justify-center items-center">
       <div className="bg-white/5 p-4 w-4/5 backdrop-blur-md shadow-md">
         <h1 className="text-2xl text-center">Login</h1>
         <p className="text-center">Welcome back </p>
 
-        <form action="" className="flex flex-col gap-y-2 mt-2">
+        <form
+          onSubmit={handleSubmit(onSubmit)}
+          className="flex flex-col gap-y-2 mt-2"
+        >
           <div className="space-y-2">
             <label htmlFor="email">Email</label>
             <input
@@ -16,6 +27,7 @@ const LoginPage = () => {
               name="email"
               id="email"
               placeholder="Enter your email address"
+              {...register("email", { required: true })}
             />
           </div>
           <div className="space-y-2">
@@ -26,6 +38,7 @@ const LoginPage = () => {
               name="password"
               id="password"
               placeholder="Enter your password"
+              {...register("password", { required: true })}
             />
           </div>
           <button

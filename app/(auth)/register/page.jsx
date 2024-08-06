@@ -3,17 +3,22 @@ import Link from "next/link";
 import { useForm } from "react-hook-form";
 import signUp from "@/actions/register";
 import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 const RegisterPage = () => {
+
   const { handleSubmit, register } = useForm();
+  const router = useRouter();
 
   const onSubmit = async (data) => {
     const result = await signUp(data);
     if (result?.success) {
-      toast.success(result.message);
+      toast.success(result?.message);
+      router.push("/");
     } else {
-      toast.error(result.message);
+      toast.error(result?.message);
     }
   };
+
   return (
     <div className="flex h-[88vh] w-full justify-center items-center">
       <div className="bg-white/5 p-4 w-4/5 backdrop-blur-md shadow-md">

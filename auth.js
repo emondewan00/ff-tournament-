@@ -14,31 +14,40 @@ export const {
   providers: [
     Credentials({
       name: "Credentials",
-      async authorize(credentials, req) {
-        console.log(credentials, "authorization");
-        // Simulate user retrieval
-        const user = { email: credentials.email };
-
-        // Check if the email exists in the user object
-        if (!user || !user.email) {
-          throw new Error("Email is required");
+      credentials: {
+        email: { label: "Email", type: "email", placeholder: "Email" },
+        password: {
+          label: "Password",
+          type: "password",
+          placeholder: "Password",
+        },
+      },
+      async authorize(credentials) {
+        if (credentials.email) {
+          return credentials;
         }
-
-        return user; // Return user object with email
+        return null;
       },
     }),
   ],
   callbacks: {
-    async jwt({ token, account, user }) {
-      console.log(account, user, "jwt token");
+    async jwt({ token, user }) {
       if (user) {
         token.email = user.email;
+        token.role = user.role;
+        token.id = user.id;
+        token.firstName = user.firstName;
+        token.lastName = user.lastName;
       }
       return token;
     },
-    async session({ session, token, user }) {
-      if (token) {
+    async session({ session, token }) {
+      if (token.email) {
         session.user.email = token.email;
+        session.user.role = token.role;
+        session.user.id = token.id;
+        session.user.firstName = token.firstName;
+        session.user.lastName = token.lastName;
       }
       return session;
     },

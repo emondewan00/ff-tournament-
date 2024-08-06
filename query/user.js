@@ -9,7 +9,7 @@ export const registerUser = async (user) => {
     await connectMongo();
     const hashPassword = await bcrypt.hash(user.password, 10);
 
-    const { _id, email, firstName, lastName } = await User.create({
+    const { _id, email, firstName, lastName, role } = await User.create({
       ...user,
       password: hashPassword,
     });
@@ -17,10 +17,11 @@ export const registerUser = async (user) => {
       success: true,
       message: "User registered successfully",
       user: {
-        _id,
+        id: _id.toString(),
         email,
         firstName,
         lastName,
+        role,
       },
     };
   } catch (error) {
@@ -49,16 +50,17 @@ export const loginUser = async (user) => {
     if (!isPasswordValid) {
       return { success: false, message: "Invalid email or password" };
     }
-    const { _id, email, firstName, lastName } = existingUser;
+    const { _id, email, firstName, lastName, role } = existingUser;
 
     return {
       success: true,
       message: "Login success",
       user: {
-       
+        id: _id.toString(),
         email,
         firstName,
         lastName,
+        role,
       },
     };
   } catch (error) {

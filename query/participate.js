@@ -21,13 +21,14 @@ export const participateInAMatch = async (data) => {
     await connectMongo();
     // get match by matchId
     const updatedMatch = await Match.findById(data.matchId);
-    
+
     // create new participant instance
     const newParticipant = new Participate(data);
 
     // if slots are not available then return
     if (updatedMatch.totalSlots <= updatedMatch.participants.length) {
       return {
+        success: true,
         message: "Matched participants already fulfilled",
         status: "failed",
       };
@@ -38,7 +39,11 @@ export const participateInAMatch = async (data) => {
 
     // if user have not enough taka then return
     if (updatedUser.taka < updatedMatch.entryFee) {
-      return { message: "Couldn't have enough money", status: "error" };
+      return {
+        success: true,
+        message: "Couldn't have enough money",
+        status: "error",
+      };
     }
 
     // save new participants
@@ -52,9 +57,14 @@ export const participateInAMatch = async (data) => {
     updatedUser.taka = updatedUser.taka - updatedMatch.entryFee;
     await updatedUser.save();
 
-    return { message: "Participate successfully", status: "success" };
+    return {
+      success: true,
+      message: "Participate successfully",
+      status: "success",
+    };
   } catch (error) {
     return {
+      success: false,
       message: error.message || "Participate failed",
       status: "error",
     };

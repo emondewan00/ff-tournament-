@@ -76,11 +76,11 @@ const MatchDetailsPage = async ({ params: { id } }) => {
         <div className="flex flex-wrap gap-2 my-2">
           <div className="bg-white/10 border p-2 rounded-md flex-1 text-center">
             Winning Prize:{" "}
-            <span className="font-bold">৳{prizeDetails?.totalPrize}</span>
+            <span className="font-bold">{prizeDetails?.totalPrize}৳</span>
           </div>
           <div className="bg-white/10 border p-2 rounded-md flex-1 text-center">
             Per Kill:{" "}
-            <span className="font-bold">৳{prizeDetails?.perKill}</span>
+            <span className="font-bold">{prizeDetails?.perKill}৳</span>
           </div>
         </div>
       </div>

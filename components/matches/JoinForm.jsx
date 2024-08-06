@@ -2,12 +2,26 @@
 
 import { joinInMatch } from "@/actions/joinInMatch";
 import { useSession } from "next-auth/react";
+import { toast } from "react-toastify";
 
 const JoinForm = ({ onClose, id }) => {
   const {
     data: { user },
     status,
   } = useSession();
+
+  const onSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const result = await joinInMatch(formData);
+    if (result?.success) {
+      onClose();
+      toast.success(result.message);
+    } else {
+      onClose();
+      toast.error(result.message);
+    }
+  };
 
   return (
     <div className="bg-black/30 h-full w-full absolute top-0 left-0 z-[1000] flex justify-center items-center  ">
@@ -20,7 +34,7 @@ const JoinForm = ({ onClose, id }) => {
         </div>
 
         <form
-          action={joinInMatch}
+          onSubmit={onSubmit}
           className="space-y-4 w-60 p-4 bg-white rounded"
         >
           <h1>User info </h1>

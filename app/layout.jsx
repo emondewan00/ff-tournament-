@@ -2,6 +2,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import AuthProvider from "@/providers/AuthProvider";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -19,7 +20,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${roboto.className} bg-slate-900 text-white min-h-screen`}
       >
-        {children}
+        <AuthProvider>{children}</AuthProvider>
         <ToastContainer />
       </body>
     </html>

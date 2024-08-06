@@ -1,8 +1,14 @@
 "use client";
 
 import { joinInMatch } from "@/actions/joinInMatch";
+import { useSession } from "next-auth/react";
 
-const JoinForm = ({ onClose }) => {
+const JoinForm = ({ onClose, id }) => {
+  const {
+    data: { user },
+    status,
+  } = useSession();
+
   return (
     <div className="bg-black/30 h-full w-full absolute top-0 left-0 z-[1000] flex justify-center items-center  ">
       <div className="fixed left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  text-black ">
@@ -17,7 +23,6 @@ const JoinForm = ({ onClose }) => {
           action={joinInMatch}
           className="space-y-4 w-60 p-4 bg-white rounded"
         >
-          {/* <label htmlFor="userName">User Name</label> */}
           <h1>User info </h1>
           <input
             type="text"
@@ -25,6 +30,8 @@ const JoinForm = ({ onClose }) => {
             placeholder="Enter your user name"
             className="p-2 bg-slate-100 border border-blue-500  focus:outline focus:outline-blue-500 w-full"
           />
+          <input type="hidden" name="matchId" value={id} />
+          <input type="hidden" name="userId" value={user.id} />
           <input
             type="submit"
             value="Join"

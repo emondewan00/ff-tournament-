@@ -87,6 +87,7 @@ const MatchCard = ({ match }) => {
         isClosed={totalSlots === participants?.length}
         isJoined={participants.includes(participants)}
         title={matchTitle}
+        id={_id.toLocaleString()}
       />
     </div>
   );

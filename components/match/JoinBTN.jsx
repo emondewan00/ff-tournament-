@@ -4,7 +4,7 @@ import { useState } from "react";
 import JoinForm from "../matches/JoinForm";
 import { createPortal } from "react-dom";
 
-const JoinBTN = ({ isClosed, isJoined }) => {
+const JoinBTN = ({ isClosed, isJoined, id }) => {
   const [joinPopUp, setJoinPopUp] = useState(false);
 
   const onCloseJoinPopUp = () => setJoinPopUp(false);
@@ -23,7 +23,7 @@ const JoinBTN = ({ isClosed, isJoined }) => {
       </button>
       {joinPopUp &&
         createPortal(
-          <JoinForm onClose={onCloseJoinPopUp} />,
+          <JoinForm onClose={onCloseJoinPopUp} id={id} />,
           document.querySelector(".modal")
         )}
     </>

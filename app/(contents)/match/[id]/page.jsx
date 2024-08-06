@@ -93,6 +93,7 @@ const MatchDetailsPage = async ({ params: { id } }) => {
       <JoinBTN
         isClosed={totalSlots === participants?.length}
         isJoined={participants.includes(participants)}
+        id={id}
       />
     </div>
   );

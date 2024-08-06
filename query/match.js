@@ -12,7 +12,7 @@ export const getMatchesForCategoryId = async (id) => {
 
 export const getAllOngoingMatches = async () => {
   await connectMongo();
-  const matches = await Match.find({ schedule: { $gte: new Date() } }).lean();
+  const matches = await Match.find({ status: "live" }).lean();
   return matches;
 };
 

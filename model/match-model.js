@@ -41,6 +41,10 @@ const matchSchema = new Schema({
     type: Number,
     required: true,
   },
+  status: {
+    type: String,
+    enum: ["live", "closed"],
+  },
 });
 
 const Match = models.Match || model("Match", matchSchema);

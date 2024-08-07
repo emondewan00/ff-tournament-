@@ -43,7 +43,7 @@ const matchSchema = new Schema({
   },
   status: {
     type: String,
-    enum: ["pending", "live", "closed"],
+    enum: ["unpublish", "live", "closed", "fulfilled"],
     default: "live",
   },
   closedTime: {

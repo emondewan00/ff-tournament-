@@ -51,6 +51,10 @@ export const participateInAMatch = async (data) => {
 
     // update participants array with new participants in match
     updatedMatch.participants.push(newParticipant._id);
+
+    if (updatedMatch.participants.length === updatedMatch.totalSlots) {
+      updatedMatch.status = "fulfilled";
+    }
     await updatedMatch.save();
 
     // update user taka after subtraction of entry fee

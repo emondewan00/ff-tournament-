@@ -13,6 +13,7 @@ const MatchCard = ({ match }) => {
     type,
     totalSlots,
     participants,
+    status,
   } = match;
   const matchTitle =
     title +

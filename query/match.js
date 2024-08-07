@@ -12,7 +12,11 @@ export const getMatchesForCategoryId = async (id) => {
 
 export const getAllOngoingMatches = async () => {
   await connectMongo();
-  const matches = await Match.find({ status: "live" }).lean();
+  const matches = await Match.find({
+    status: { $in: ["live", "fulfilled"] },
+  })
+    .sort({ schedule: 1 })
+    .lean();
   return matches;
 };
 
@@ -32,7 +36,9 @@ export const getMatchById = async (id) => {
 export const getResults = async () => {
   await connectMongo();
   const matches = await Match.find({
-    closed: { $gte: new Date(new Date() - 24 * 60 * 60 * 1000) },
-  }).lean();
+    closedTime: { $gte: new Date(new Date() - 24 * 60 * 60 * 1000) },
+  })
+    .sort({ closedTime: -1 })
+    .lean();
   return matches;
 };

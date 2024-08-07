@@ -2,11 +2,18 @@
 
 import connectMongo from "@/lib/connectDb";
 import Match from "@/model/match-model";
-import User from "@/model/user-model";
+import Participate from "@/model/participate-model";
 
 export const getMatchesForCategoryId = async (id) => {
   await connectMongo();
-  const matches = await Match.find({ gameFor: id }).lean();
+  const matches = await Match.find({ gameFor: id })
+    .populate({
+      path: "participants",
+      model: Participate,
+      select: ["userId"],
+    })
+    .sort({ schedule: 1 })
+    .lean();
   return matches;
 };
 
@@ -17,7 +24,7 @@ export const getAllOngoingMatches = async () => {
   })
     .populate({
       path: "participants",
-      model: User,
+      model: Participate,
       select: ["userId"],
     })
     .sort({ schedule: 1 })
@@ -30,7 +37,7 @@ export const getMatchById = async (id) => {
   const match = await Match.findById(id)
     .populate({
       path: "participants",
-      model: User,
+      model: Participate,
       select: ["name"],
     })
     .lean();

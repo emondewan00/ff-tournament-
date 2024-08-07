@@ -36,14 +36,6 @@ const MatchCard = async ({ match }) => {
     matchStatus = "Fulfilled";
   }
 
-  if (participants.includes(user.id)) {
-    console.log("hello i am joined");
-  } else {
-    console.log("hello i am not joined");
-    const membersInString = JSON.stringify(participants);
-    const members = JSON.parse(membersInString);
-    console.log(members.includes(user.id), members,user.id);
-  }
 
   return (
     <div className="bg-white/10 rounded-lg p-4 mb-4 text-white relative match-card border-transparent border-2 backdrop-blur-sm">

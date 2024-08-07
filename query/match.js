@@ -27,3 +27,12 @@ export const getMatchById = async (id) => {
     .lean();
   return match;
 };
+
+// this function will return which matches are closed in 24 hours  from now
+export const getResults = async () => {
+  await connectMongo();
+  const matches = await Match.find({
+    closed: { $gte: new Date(new Date() - 24 * 60 * 60 * 1000) },
+  }).lean();
+  return matches;
+};

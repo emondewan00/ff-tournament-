@@ -31,11 +31,20 @@ const MatchCard = async ({ match }) => {
   let matchStatus = null;
 
   if (status === "live") {
-    matchStatus = "";
+    matchStatus = "Join Now";
   } else if (status === "fulfilled") {
     matchStatus = "Fulfilled";
+  } else {
+    matchStatus = "Closed";
   }
 
+  const isJoined = participants.find(
+    (participant) => participant.userId.toString() === user.id
+  );
+
+  if (isJoined) {
+    matchStatus = "Joined";
+  }
 
   return (
     <div className="bg-white/10 rounded-lg p-4 mb-4 text-white relative match-card border-transparent border-2 backdrop-blur-sm">
@@ -97,10 +106,10 @@ const MatchCard = async ({ match }) => {
       </div>
       <JoinAndDetailsBTN
         prizeDetails={prizeDetails}
-        isClosed={totalSlots === participants?.length}
-        isJoined={participants.includes(participants)}
+        matchStatus={matchStatus}
         title={matchTitle}
         id={_id.toLocaleString()}
+        isJoined={!!isJoined}
       />
     </div>
   );

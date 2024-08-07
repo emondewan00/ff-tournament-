@@ -5,13 +5,19 @@ import { createPortal } from "react-dom";
 import TotalPrize from "./TotalPrize";
 import JoinForm from "./JoinForm";
 
-const JoinAndDetailsBTN = ({ prizeDetails, title, isClosed, isJoined, id }) => {
+const JoinAndDetailsBTN = ({
+  prizeDetails,
+  title,
+  id,
+  matchStatus,
+  isJoined,
+}) => {
   const [joinPopUp, setJoinPopUp] = useState(false);
   const [totalPrize, setTotalPrize] = useState(false);
   const onCloseJoinPopUp = () => setJoinPopUp(false);
 
   const onClickJoin = () => {
-    if (isClosed || isJoined) return null;
+    if (matchStatus === "Fulfilled" || isJoined) return null;
     setJoinPopUp(true);
   };
 
@@ -38,7 +44,7 @@ const JoinAndDetailsBTN = ({ prizeDetails, title, isClosed, isJoined, id }) => {
           onClick={onClickJoin}
           className="bg-green-500 text-white py-2 px-4 rounded relative z-50 hover:scale-105 delay-200 duration-300 transition-all ease-linear "
         >
-          {isClosed ? "Closed" : isJoined ? "Joined" : "Join Now"}
+          {matchStatus}
         </button>
         {joinPopUp &&
           createPortal(

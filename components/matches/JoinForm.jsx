@@ -45,7 +45,7 @@ const JoinForm = ({ onClose, id }) => {
             className="p-2 bg-slate-100 border border-blue-500  focus:outline focus:outline-blue-500 w-full"
           />
           <input type="hidden" name="matchId" value={id} />
-          <input type="hidden" name="userId" value={user.id} />
+          <input type="hidden" name="userId" value={user?.id} />
           <input
             type="submit"
             value="Join"

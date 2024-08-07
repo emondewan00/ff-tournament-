@@ -15,6 +15,11 @@ export const getAllOngoingMatches = async () => {
   const matches = await Match.find({
     status: { $in: ["live", "fulfilled"] },
   })
+    .populate({
+      path: "participants",
+      model: User,
+      select: ["userId"],
+    })
     .sort({ schedule: 1 })
     .lean();
   return matches;

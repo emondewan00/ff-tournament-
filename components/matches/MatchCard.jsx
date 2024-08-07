@@ -1,7 +1,8 @@
 import Link from "next/link";
 import JoinAndDetailsBTN from "./JoinAndDetailsBTN";
+import { auth } from "@/auth";
 
-const MatchCard = ({ match }) => {
+const MatchCard = async ({ match }) => {
   const {
     _id,
     title,
@@ -23,7 +24,26 @@ const MatchCard = ({ match }) => {
     _id.toString().slice(18, 24)?.toUpperCase();
   const matchSchedule = new Date(schedule).toLocaleString();
 
+  const { user } = await auth();
+
   const progress = (100 / totalSlots) * participants.length;
+
+  let matchStatus = null;
+
+  if (status === "live") {
+    matchStatus = "";
+  } else if (status === "fulfilled") {
+    matchStatus = "Fulfilled";
+  }
+
+  if (participants.includes(user.id)) {
+    console.log("hello i am joined");
+  } else {
+    console.log("hello i am not joined");
+    const membersInString = JSON.stringify(participants);
+    const members = JSON.parse(membersInString);
+    console.log(members.includes(user.id), members,user.id);
+  }
 
   return (
     <div className="bg-white/10 rounded-lg p-4 mb-4 text-white relative match-card border-transparent border-2 backdrop-blur-sm">

@@ -27,11 +27,7 @@ export const participateInAMatch = async (data) => {
 
     // if slots are not available then return
     if (updatedMatch.totalSlots <= updatedMatch.participants.length) {
-      return {
-        success: true,
-        message: "Matched participants already fulfilled",
-        status: "failed",
-      };
+      throw new Error("Matched participants already fulfilled");
     }
 
     // get user for update taka
@@ -39,11 +35,7 @@ export const participateInAMatch = async (data) => {
 
     // if user have not enough taka then return
     if (updatedUser.taka < updatedMatch.entryFee) {
-      return {
-        success: true,
-        message: "Couldn't have enough money",
-        status: "error",
-      };
+      throw new Error("Couldn't have enough money");
     }
 
     // save new participants
@@ -67,6 +59,7 @@ export const participateInAMatch = async (data) => {
       status: "success",
     };
   } catch (error) {
+    console.log(error);
     return {
       success: false,
       message: error.message || "Participate failed",

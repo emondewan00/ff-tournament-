@@ -43,7 +43,12 @@ const matchSchema = new Schema({
   },
   status: {
     type: String,
-    enum: ["live", "closed"],
+    enum: ["pending", "live", "closed"],
+    default: "live",
+  },
+  closedTime: {
+    type: Date,
+    default: null,
   },
 });
 

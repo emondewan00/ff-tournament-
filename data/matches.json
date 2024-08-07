@@ -21,7 +21,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4707"
     },
-    "totalSlots": 2
+    "totalSlots": 2,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "CS (2 VS 2)",
@@ -45,7 +47,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4707"
     },
-    "totalSlots": 4
+    "totalSlots": 4,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "CS (3 VS 3)",
@@ -69,7 +73,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4707"
     },
-    "totalSlots": 6
+    "totalSlots": 6,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "CS (4 VS 4)",
@@ -93,7 +99,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4707"
     },
-    "totalSlots": 8
+    "totalSlots": 8,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "CS (1 VS 1)",
@@ -117,7 +125,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4709"
     },
-    "totalSlots": 2
+    "totalSlots": 2,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "CS (2 VS 2)",
@@ -141,7 +151,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4709"
     },
-    "totalSlots": 4
+    "totalSlots": 4,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "CS (3 VS 3)",
@@ -165,7 +177,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4709"
     },
-    "totalSlots": 6
+    "totalSlots": 6,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "CS (4 VS 4)",
@@ -189,7 +203,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4709"
     },
-    "totalSlots": 8
+    "totalSlots": 8,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "Solo Match",
@@ -212,7 +228,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4706"
     },
-    "totalSlots": 48
+    "totalSlots": 48,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "Duo Match",
@@ -235,7 +253,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4706"
     },
-    "totalSlots": 48
+    "totalSlots": 48,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "Solo Match",
@@ -258,7 +278,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4706"
     },
-    "totalSlots": 48
+    "totalSlots": 48,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "Duo Match",
@@ -281,7 +303,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4706"
     },
-    "totalSlots": 48
+    "totalSlots": 48,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "Solo Match",
@@ -304,7 +328,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4708"
     },
-    "totalSlots": 48
+    "totalSlots": 48,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "Duo Match",
@@ -327,7 +353,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4708"
     },
-    "totalSlots": 48
+    "totalSlots": 48,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "Solo Match",
@@ -350,7 +378,9 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4708"
     },
-    "totalSlots": 48
+    "totalSlots": 48,
+    "status": "live",
+    "closedTime": null
   },
   {
     "title": "Duo Match",
@@ -373,6 +403,8 @@
     "gameFor": {
       "$oid": "66a38263e4dcdb915dda4708"
     },
-    "totalSlots": 48
+    "totalSlots": 48,
+    "status": "live",
+    "closedTime": null
   }
 ]

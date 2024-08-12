@@ -15,7 +15,7 @@ const ResultPage = async ({ params: { id } }) => {
           </tr>
         </thead>
         <tbody>
-          {participants.map((participant) => (
+          {participants?.participants?.map((participant) => (
             <tr key={participant?._id}>
               <td>{participant?.userId.name}</td>
               <td className="text-center">{participant?.position}</td>

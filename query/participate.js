@@ -6,6 +6,15 @@ import Match from "@/model/match-model";
 
 export const getParticipantsForMatchId = async (id) => {
   await connectMongo();
+
+  const match = await Match.findById(id)
+    .select({
+      title: 1,
+      version: 1,
+      schedule: 1,
+    })
+    .lean();
+
   const participants = await Participate.find({ matchId: id })
     .populate({
       path: "userId",
@@ -13,7 +22,10 @@ export const getParticipantsForMatchId = async (id) => {
       select: ["name"],
     })
     .lean();
-  return participants;
+  return {
+    match,
+    participants,
+  };
 };
 
 export const participateInAMatch = async (data) => {

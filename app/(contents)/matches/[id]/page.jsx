@@ -7,7 +7,7 @@ const MatchesPage = async ({ params: { id } }) => {
   return (
     <div className="pb-16">
       {matches.map((match) => (
-        <MatchCard key={match._id} match={match} />
+        <MatchCard key={match._id} match={match} href={`/match/${match._id}`} />
       ))}
     </div>
   );

@@ -2,7 +2,7 @@ import Link from "next/link";
 import JoinAndDetailsBTN from "./JoinAndDetailsBTN";
 import { auth } from "@/auth";
 
-const MatchCard = async ({ match }) => {
+const MatchCard = async ({ match, href }) => {
   const {
     _id,
     title,
@@ -48,10 +48,7 @@ const MatchCard = async ({ match }) => {
 
   return (
     <div className="bg-white/10 rounded-lg p-4 mb-4 text-white relative match-card border-transparent border-2 backdrop-blur-sm">
-      <Link
-        href={`/match/${_id}`}
-        className="absolute top-0 left-0 w-full h-full"
-      ></Link>
+      <Link href={href} className="absolute top-0 left-0 w-full h-full"></Link>
       <div className="flex items-center mb-2">
         <img
           src="https://placehold.co/50x50"

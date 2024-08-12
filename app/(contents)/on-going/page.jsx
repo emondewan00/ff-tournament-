@@ -8,7 +8,13 @@ const OnGoing = async () => {
     <>
       <div className="pb-16">
         {matches.length > 0 &&
-          matches.map((match) => <MatchCard key={match._id} match={match} />)}
+          matches.map((match) => (
+            <MatchCard
+              key={match._id}
+              match={match}
+              href={`/match/${match._id}`}
+            />
+          ))}
       </div>
       {matches.length === 0 && <p>No ongoing matches found.</p>}
     </>

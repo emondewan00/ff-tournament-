@@ -11,7 +11,7 @@ const participateSchema = new Schema({
     required: true,
     index: true,
   },
-  gameIdName: {
+  username: {
     type: String,
     required: true,
   },

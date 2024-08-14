@@ -3,7 +3,7 @@ import { getParticipantsForMatchId } from "@/query/participate";
 const MatchResultPage = async ({ params: { id } }) => {
   const result = await getParticipantsForMatchId(id);
 
-  if (!result) {
+  if (!result?.participants) {
     return (
       <div>
         <div>Match not found.</div>
@@ -40,7 +40,18 @@ const MatchResultPage = async ({ params: { id } }) => {
             </tr>
           </thead>
           <tbody>
-           
+            {participants.map((participant, index) => (
+              <tr key={participant._id}>
+                <td>{index + 1}</td>
+                <td>
+                  {participant.player.username} &nbsp;
+                  <span className="text-green-500">
+                    {participant.kills} kills
+                  </span>
+                </td>
+                <td>{participant.winning ? "Winning" : "Losing"}</td>
+              </tr>
+            ))}
           </tbody>
         </table>
       </div>

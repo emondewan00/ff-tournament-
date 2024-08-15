@@ -6,7 +6,13 @@ import { useFieldArray, useForm } from "react-hook-form";
 import { toast } from "react-toastify";
 import { FaMinus } from "react-icons/fa";
 
-const JoinForm = ({ onClose, id }) => {
+const types = {
+  solo: 1,
+  duo: 2,
+  squad: 4,
+};
+
+const JoinForm = ({ onClose, id, type }) => {
   const {
     data: { user },
     status,
@@ -16,7 +22,7 @@ const JoinForm = ({ onClose, id }) => {
     defaultValues: {
       players: [
         {
-          username: 0,
+          username: "",
         },
       ],
       matchId: id,
@@ -63,7 +69,7 @@ const JoinForm = ({ onClose, id }) => {
               <div key={field.id} className="flex">
                 <input
                   type="text"
-                  name={field.username}
+                  {...register(`players.${index}.username`, { required: true })}
                   placeholder="Player user name"
                   className="p-2 bg-slate-100 border border-r-0 border-blue-500  focus:outline focus:outline-blue-500 w-full"
                 />
@@ -79,18 +85,15 @@ const JoinForm = ({ onClose, id }) => {
             );
           })}
 
-          {fields.length < 4 && (
+          {fields.length < types[type] && (
             <button
               type="button"
-              onClick={() => append({ username: fields.length })}
-              className="w-full bg-blue-600 py-2 rounded text-white cursor-pointer hover:bg-blue-700 duration-100 delay-75 transition-all ease-linear "
+              onClick={() => append({ username: "", kills: 0 })}
+              className="w-full bg-green-500 py-2 rounded text-white cursor-pointer hover:bg-green-600 duration-100 delay-75 transition-all ease-linear "
             >
               Add Name
             </button>
           )}
-
-          <input type="hidden" name="matchId" value={id} />
-          <input type="hidden" name="userId" value={user?.id} />
           <input
             type="submit"
             value="Join"

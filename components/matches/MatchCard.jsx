@@ -107,6 +107,7 @@ const MatchCard = async ({ match, href }) => {
         title={matchTitle}
         id={_id.toLocaleString()}
         isJoined={!!isJoined}
+        type={type}
       />
     </div>
   );

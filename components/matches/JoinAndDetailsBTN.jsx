@@ -11,6 +11,7 @@ const JoinAndDetailsBTN = ({
   id,
   matchStatus,
   isJoined,
+  type,
 }) => {
   const [joinPopUp, setJoinPopUp] = useState(false);
   const [totalPrize, setTotalPrize] = useState(false);
@@ -48,7 +49,7 @@ const JoinAndDetailsBTN = ({
         </button>
         {joinPopUp &&
           createPortal(
-            <JoinForm onClose={onCloseJoinPopUp} id={id} />,
+            <JoinForm onClose={onCloseJoinPopUp} id={id} type={type} />,
             document.querySelector(".modal")
           )}
       </div>

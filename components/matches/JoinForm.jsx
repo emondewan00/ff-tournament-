@@ -23,6 +23,7 @@ const JoinForm = ({ onClose, id, type }) => {
       players: [
         {
           username: "",
+          kills: 0,
         },
       ],
       matchId: id,

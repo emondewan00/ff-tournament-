@@ -11,16 +11,18 @@ const participateSchema = new Schema({
     required: true,
     index: true,
   },
-  players: {
-    username: {
-      type: String,
-      required: true,
+  players: [
+    {
+      username: {
+        type: String,
+        required: true,
+      },
+      kills: {
+        type: Number,
+        default: 0,
+      },
     },
-    kills: {
-      type: Number,
-      default: 0,
-    },
-  },
+  ],
   position: {
     type: Number,
   },

@@ -36,16 +36,14 @@ const JoinForm = ({ onClose, id, type }) => {
   });
 
   const onSubmit = async (data) => {
-    console.log(data);
-    // const formData = new FormData(e.target);
-    // const result = await joinInMatch(formData);
-    // if (result?.success) {
-    //   onClose();
-    //   toast.success(result.message);
-    // } else {
-    //   onClose();
-    //   toast.error(result.message);
-    // }
+    const result = await joinInMatch(data);
+    if (result?.success) {
+      onClose();
+      toast.success(result.message);
+    } else {
+      onClose();
+      toast.error(result.message);
+    }
   };
 
   return (

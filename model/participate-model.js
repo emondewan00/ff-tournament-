@@ -26,6 +26,10 @@ const participateSchema = new Schema({
   position: {
     type: Number,
   },
+  winingMoney: {
+    type: Number,
+    default: 0,
+  },
   status: {
     type: String,
     enum: ["pending", "published"],

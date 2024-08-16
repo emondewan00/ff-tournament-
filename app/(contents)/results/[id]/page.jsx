@@ -30,26 +30,31 @@ const MatchResultPage = async ({ params: { id } }) => {
         <p className="text-sm text-green-500">Organized on {matchSchedule}</p>
       </div>
 
-      <div className="bg-white/10 backdrop-blur-sm shadow-md p-4 text-center mt-6">
-        <table>
-          <thead>
-            <tr>
+      <div className="bg-white/10 backdrop-blur-sm shadow-md text-center mt-6">
+        <table className="w-full">
+          <thead className="text-center font-bold bg-blue-500 ">
+            <tr className="*:py-3 *:px-4">
               <td>#</td>
               <td>Player & Kills</td>
               <td>Winning</td>
             </tr>
           </thead>
-          <tbody>
-            {participants.map((participant, index) => (
-              <tr key={participant._id}>
+          <tbody className="*:border-b">
+            {participants.map((player, index) => (
+              <tr
+                key={index}
+                className="*:py-3 *:px-4 last:border-b-blue-500 last:border-b-2 even:bg-white/15 "
+              >
                 <td>{index + 1}</td>
                 <td>
-                  {participant.player.username} &nbsp;
-                  <span className="text-green-500">
-                    {participant.kills} kills
-                  </span>
+                  {player.players.map((player) => (
+                    <div key={player._id}>
+                      {player.username} &nbsp;
+                      <span className="text-green-500">{player.kills}</span>
+                    </div>
+                  ))}
                 </td>
-                <td>{participant.winning ? "Winning" : "Losing"}</td>
+                <td>{player.winningMoney}</td>
               </tr>
             ))}
           </tbody>

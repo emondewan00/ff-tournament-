@@ -17,7 +17,7 @@ const matchSchema = new Schema({
   },
   type: {
     type: String,
-    enum: ["solo", "duo", "squad"],
+    enum: ["solo", "duo", "trio", "squad"],
     required: true,
   },
   version: {

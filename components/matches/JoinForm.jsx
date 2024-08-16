@@ -9,6 +9,7 @@ import { FaMinus } from "react-icons/fa";
 const types = {
   solo: 1,
   duo: 2,
+  trio: 3,
   squad: 4,
 };
 

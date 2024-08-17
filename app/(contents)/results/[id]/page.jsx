@@ -24,7 +24,7 @@ const MatchResultPage = async ({ params: { id } }) => {
   const matchSchedule = new Date(match?.schedule).toLocaleString();
 
   return (
-    <div>
+    <div className="pb-20">
       <div className="bg-white/10 backdrop-blur-sm shadow-md p-4 text-center">
         <p className="capitalize font-semibold">{matchTitle}</p>
         <p className="text-sm text-green-500">Organized on {matchSchedule}</p>
@@ -50,11 +50,13 @@ const MatchResultPage = async ({ params: { id } }) => {
                   {player.players.map((player) => (
                     <div key={player._id}>
                       {player.username} &nbsp;
-                      <span className="text-green-500">{player.kills}</span>
+                      <span className="text-green-500">
+                        {player.kills} Kills
+                      </span>
                     </div>
                   ))}
                 </td>
-                <td>{player.winningMoney}</td>
+                <td>{player.winingMoney}</td>
               </tr>
             ))}
           </tbody>

@@ -45,12 +45,20 @@ export const getMatchById = async (id) => {
 };
 
 // this function will return which matches are closed in 24 hours  from now
+
+// closedTime: { $gte: new Date(new Date() - 24 * 60 * 60 * 1000) },
+
 export const getResults = async () => {
   await connectMongo();
   const matches = await Match.find({
-    closedTime: { $gte: new Date(new Date() - 24 * 60 * 60 * 1000) },
+    status: "closed",
   })
-    .sort({ closedTime: -1 })
+    .populate({
+      path: "participants",
+      model: Participate,
+      select: ["userId"],
+    })
+    .sort({ schedule: -1 })
     .lean();
   return matches;
 };
